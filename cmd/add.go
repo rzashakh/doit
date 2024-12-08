@@ -10,7 +10,7 @@ var addCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Creates a new task",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Print("add called")
+		fmt.Println(args)
 	},
 }
 

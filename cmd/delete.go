@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var deleteCmd = &cobra.Command{
+var doCmd = &cobra.Command{
 	Use:   "delete",
 	Short: "Delete specific task",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -15,5 +15,5 @@ var deleteCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(deleteCmd)
+	rootCmd.AddCommand(doCmd)
 }
